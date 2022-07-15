@@ -9,7 +9,6 @@ function List() {
                 key={dino.id} 
                 name={dino.name}
                 movies={dino.movies}
-                
             />
         )
     })

@@ -4,8 +4,11 @@ function Card(props) {
   console.log(props);
   return (
     <div>
-        <h1>{props.name}</h1>
-        <p>Appearances: {props.movies}</p>
+      <img src="" alt={`${props.name}`} />
+      <div>
+          <h1>{props.name}</h1>
+          <p>Appearances: {props.movies}</p>
+      </div>
     </div>
   )
 }
