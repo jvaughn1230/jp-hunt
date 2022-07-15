@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Card({name, id}) {
+function Card(props) {
+  console.log(props);
   return (
     <div>
-        <h2>{name}</h2>
+        <h1>{props.name}</h1>
+        <p>Appearances: {props.movies}</p>
     </div>
   )
 }

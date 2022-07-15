@@ -1,22 +1,23 @@
-import React from 'react';
+import React from 'react'
+import dinos from '../dinos';
 import Card from './Card';
 
-function List({dinos}) {
-    const dinoArray = dinos.map((name, index)=>{
+function List() {
+    const dinoList = dinos.map((dino)=>{
         return(
-            <Card 
-                key={index}
-                name={dinos.name}
+            <Card
+                key={dino.id} 
+                name={dino.name}
+                movies={dino.movies}
+                
             />
         )
-    }); 
-    
-return (
+    })
+  return (
     <div>
-        {dinoArray}
+        {dinoList}
     </div>
   )
 }
 
-export default List
-// Import Data and Card and map data over the card component
+export default List;
