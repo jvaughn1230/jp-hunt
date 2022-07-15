@@ -9,9 +9,11 @@ function List() {
                 key={dino.id} 
                 name={dino.name}
                 movies={dino.movies}
+                url={dino.url}
             />
         )
-    })
+    });
+
   return (
     <div>
         {dinoList}
